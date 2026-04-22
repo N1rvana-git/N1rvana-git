@@ -1,0 +1,31 @@
+name: Generate Cyberpunk Snake
+
+on:
+  schedule:
+    # 每天 UTC 0 点 (北京时间早 8 点) 自动更新一次贪吃蛇
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # 贪吃蛇核心生成器
+      - uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+
+      # 将生成的动画推送到一个名为 "output" 的隐藏分支
+      - name: Push to GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          # 注意：这里的 GITHUB_TOKEN 是系统自带的，不需要你去配置 Secrets！
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
