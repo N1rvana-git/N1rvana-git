@@ -13,11 +13,19 @@
 
 <br/>
 
-### 🐍 Contribution Matrix (贡献度矩阵)
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/N1rvana-git/N1rvana-git/output/github-snake-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/N1rvana-git/N1rvana-git/output/github-snake.svg">
     <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/N1rvana-git/N1rvana-git/output/github-snake.svg">
+  </picture>
+</div>
+<br/>
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/profile-night-rainbow.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./profile-3d-contrib/profile-green-animate.svg">
+    <img alt="3D Contribution City" src="./profile-3d-contrib/profile-night-rainbow.svg">
   </picture>
 </div>
