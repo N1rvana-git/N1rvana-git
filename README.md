@@ -20,21 +20,16 @@
 
 <br/>
 
-### 🎵 Neural Link Audio (Now Playing)
-<div align="center">
-  <!-- 替换下面 URL 的 id 为你的网易云音乐实际 UID ，这个第三方 API 就是用来拉取网易云资料的 -->
-  <a href="https://music.163.com/">
-    <img src="https://netease-music.obkoro1.com/api/card?id=455711927" alt="NetEase Cloud Music" />
-  </a>
-</div>
-
-<br/>
-
 ### ♟️ Hacker Terminal: Tic-Tac-Toe
 <div align="center">
-  <!-- readme-tic-tac-toe -->
-  <!-- readme-tic-tac-toe -->
+| <a href="https://github.com/N1rvana-git/N1rvana-git/issues/new?title=ttt%7C1%7C1&body=Just+push+%27Submit+new+issue%27.">⬛</a> | <a href="https://github.com/N1rvana-git/N1rvana-git/issues/new?title=ttt%7C1%7C2&body=Just+push+%27Submit+new+issue%27.">⬛</a> | <a href="https://github.com/N1rvana-git/N1rvana-git/issues/new?title=ttt%7C1%7C3&body=Just+push+%27Submit+new+issue%27.">⬛</a> |
+| :---: | :---: | :---: |
+| <a href="https://github.com/N1rvana-git/N1rvana-git/issues/new?title=ttt%7C2%7C1&body=Just+push+%27Submit+new+issue%27.">⬛</a> | <a href="https://github.com/N1rvana-git/N1rvana-git/issues/new?title=ttt%7C2%7C2&body=Just+push+%27Submit+new+issue%27.">⬛</a> | <a href="https://github.com/N1rvana-git/N1rvana-git/issues/new?title=ttt%7C2%7C3&body=Just+push+%27Submit+new+issue%27.">⬛</a> |
+| <a href="https://github.com/N1rvana-git/N1rvana-git/issues/new?title=ttt%7C3%7C1&body=Just+push+%27Submit+new+issue%27.">⬛</a> | <a href="https://github.com/N1rvana-git/N1rvana-git/issues/new?title=ttt%7C3%7C2&body=Just+push+%27Submit+new+issue%27.">⬛</a> | <a href="https://github.com/N1rvana-git/N1rvana-git/issues/new?title=ttt%7C3%7C3&body=Just+push+%27Submit+new+issue%27.">⬛</a> |
+<!-- readme-tic-tac-toe -->
+<!-- readme-tic-tac-toe -->
 </div>
+
 
 <br/>
 
@@ -60,5 +55,5 @@
 <br/>
 
 <div align="center">
-  <img src="https://profile-counter.glitch.me/N1rvana-git/count.svg" alt="Visitor Count" />
+  <img src="https://komarev.com/ghpvc/?username=N1rvana-git&style=flat-square&color=00FF00" alt="Visitor Count" />
 </div>
