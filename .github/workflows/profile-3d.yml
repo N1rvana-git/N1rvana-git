@@ -1,0 +1,35 @@
+name: Generate 3D Contribution City
+
+on:
+  schedule:
+    # 每天 UTC 18:00 (北京时间凌晨 2:00) 自动施工建城
+    - cron: "0 18 * * *"
+  workflow_dispatch:
+
+# 赋予写权限，让它能把生成的图片存进你的仓库
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: generate-github-profile-3d-contrib
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+        
+      - name: Generate 3D Images
+        uses: yoshi389111/github-profile-3d-contrib@0.7.1
+        env:
+          # GitHub 免费提供的系统 Token，直接用，无需你自己配置 Secret！
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+          
+      - name: Commit & Push
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add -A .
+          # 如果今天没写代码，城市没变化，就静默跳过报错
+          git commit -m "🚧 自动生成 3D 贡献城市" || exit 0
+          git push
