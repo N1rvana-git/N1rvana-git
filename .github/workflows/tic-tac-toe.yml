@@ -1,0 +1,21 @@
+name: Readme Tic Tac Toe
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  play:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Play Tic Tac Toe
+        uses: Marcizhu/readme-tic-tac-toe@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
