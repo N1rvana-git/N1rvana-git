@@ -15,7 +15,7 @@
 
 ### 🤖 AI Core Sentinel Log
 <!-- START_SECTION:ai_quote -->
-> **[AI Core Sentinel]:** Initializing connection to Matrix... // Standby.
+> **[System Alert]:** AI Core disconnected. Retrieving cached protocols... // Standby.
 <!-- END_SECTION:ai_quote -->
 
 <br/>
